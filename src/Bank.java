@@ -35,11 +35,12 @@ interface BankService{
 
         @Override
         public void showBalance () {
-            System.out.println("================================");
+            System.out.println("=========================================");
             System.out.println("[+] Your balance : " + this.cash + "$");
 
         }
     }
+
 
 
 class SavingAccount extends Account{
@@ -66,7 +67,8 @@ public class Bank {
     savingAccount.withdrawal(20);
     savingAccount.showBalance();
     Account CreditCardAcc = new CreditCardAcc("527-998-098-440-8225",
-            LocalDateTime.of(2026,1,1,1,1), "333");
+            LocalDateTime.of(2026,1,1,1,1),
+            "333");
     CreditCardAcc.deposit(10);
     CreditCardAcc.withdrawal(2);
     CreditCardAcc.showBalance();
